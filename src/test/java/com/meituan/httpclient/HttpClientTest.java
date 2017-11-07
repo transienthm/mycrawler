@@ -80,7 +80,7 @@ public class HttpClientTest {
     @Test
     public void testGet3() throws IOException {
 
-
+        Response response = Request.Get("http://www.qq.com").execute();
         String s = response.returnContent().asString(Charset.forName("gb2312"));
         System.out.println(s);
     }
