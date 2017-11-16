@@ -96,7 +96,12 @@ public class HttpClientTest {
 
     @Test
     public void testGet3() throws IOException {
+<<<<<<< HEAD
+
+        Response response = Request.Get("http://www.qq.com").execute();
+=======
         Response response = Request.Get("http://www.ip138.com").execute();
+>>>>>>> d671db52a71371a04374a6f96b8347633cf00951
         String s = response.returnContent().asString(Charset.forName("gb2312"));
         System.out.println(s);
     }
