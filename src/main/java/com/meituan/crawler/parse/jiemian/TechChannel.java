@@ -1,13 +1,18 @@
 package com.meituan.crawler.parse.jiemian;
 
+import com.meituan.crawler.dao.ArticleDAO;
 import com.meituan.crawler.model.Article;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * \* Created with IntelliJ IDEA.
@@ -18,17 +23,24 @@ import java.net.URL;
  * \* Description:
  * \
  */
-public class TechParse {
+@Component
+public class TechChannel {
     public static final int DELAY_TIME = 10000;
 
+    @Autowired
+    ArticleDAO articleDAO;
 
-    public static void main(String[] args) {
-        String s = TechParse.parseArticle();
-        System.out.println(s);
-    }
+/*    public static void main(String[] args) {
+        TechParse techParse = new TechParse();
+        List<Article> articles = TechParse.parseArticle();
+        for (Article article : articles) {
+            techParse.articleDAO.addArticle(article);
+            System.out.println(article.getHeader());
+        }
+    }*/
 
-    public static String parseArticle() {
-        String res = "";
+    public List<Article> parseArticle() {
+        List<Article> res = new ArrayList<>();
         try {
             Document dom = Jsoup.parse(new URL("http://www.jiemian.com/lists/65.html"), DELAY_TIME);
             Elements articleAddress = dom.select(".news-header a[href]");
@@ -36,36 +48,34 @@ public class TechParse {
             for (Element element : articleAddress) {
                 System.out.println(element.attr("href"));
                 url = element.attr("href");
+                Article article = new Article();
+                getArticleContentByURL(new URL(url), article);
+                res.add(article);
+                articleDAO.addArticle(article);
             }
-            res = getArticleContentByURL(new URL(url));
         } catch (IOException e) {
             e.printStackTrace();
         }
         return res;
     }
 
-    public static String getArticleContentByURL(URL url) {
+    public void getArticleContentByURL(URL url, Article article) {
         StringBuilder sb = new StringBuilder();
         try {
             Document dom = Jsoup.parse(url, DELAY_TIME);
-            Article article = new Article();
             Elements header = dom.select(".article-header");
-
 
             sb.append(header.select("h1").html()).append(header.select("a"));
             article.setHeader(sb.toString());
             sb.setLength(0);
-
             Elements content = dom.select(".article-content p");
             for (Element p : content) {
                 sb.append(p.html());
                 sb.append("\n");
             }
-
-            return sb.toString();
+            article.setContent(sb.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return sb.toString();
     }
 }
