@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f6b5468-2b08-4308-a774-578955790afa" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/controller/DedaoController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/dao/ColumnPieceDAO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/model/Begger.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/model/ColumnPiece.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/dedao/TuZigh.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/utils/ParseUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/youdaodict/Dict.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/youdaodict/FileWords.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/service/ColumnPieceService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/showUser.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/columnpiece-mapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/crawler.iml" afterPath="$PROJECT_DIR$/crawler.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/controller/RestTestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/meituan/crawler/controller/RestTestController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/start.html" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/resources/start.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
-    </list>
+    <list default="true" id="0f6b5468-2b08-4308-a774-578955790afa" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,36 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TechChannel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TechChannel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/jiemian/TechChannel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-311">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="168">
+              <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dict.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/youdaodict/Dict.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileWords.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/youdaodict/FileWords.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -234,8 +191,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="494" />
-    <option name="y" value="48" />
+    <option name="x" value="448" />
+    <option name="y" value="22" />
     <option name="width" value="1809" />
     <option name="height" value="986" />
   </component>
@@ -642,7 +599,7 @@
       <workItem from="1513765355017" duration="1941000" />
       <workItem from="1514194504100" duration="659000" />
       <workItem from="1523429081533" duration="547000" />
-      <workItem from="1525505238527" duration="9525000" />
+      <workItem from="1525505238527" duration="9651000" />
     </task>
     <servers />
   </component>
@@ -679,10 +636,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103186000" />
+    <option name="totallyTimeSpent" value="103312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="494" y="48" width="1809" height="986" extended-state="0" />
+    <frame x="448" y="22" width="1809" height="986" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -705,7 +663,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3486128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32810616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24985707" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1053,17 +1011,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/jiemian/TechChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-311">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/youdaodict/FileWords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="168">
           <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1074,10 +1024,18 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/youdaodict/Dict.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="32" column="50" lean-forward="true" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/meituan/crawler/parse/jiemian/TechChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
