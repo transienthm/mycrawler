@@ -1,13 +1,18 @@
 package com.meituan.crawler.controller;
 
+import com.meituan.crawler.model.Begger;
 import com.meituan.crawler.model.User;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -23,7 +28,7 @@ import java.io.IOException;
  * \* Description:
  * \
  */
-@RestController
+@Controller
 public class RestTestController {
 
     @RequestMapping("/owners/{ownerId}/pets/{petId}")
@@ -85,5 +90,41 @@ public class RestTestController {
         User user = requestEntity.getBody();
         user.setAge(10);
         return new ResponseEntity<User>(user, HttpStatus.OK);
+    }
+
+    @ModelAttribute("user")
+    public User getUser() {
+        User user = new User();
+        user.setAge(20);
+        return user;
+    }
+
+    @RequestMapping(path = "/handle62")
+    public String handle62(@ModelAttribute("user") User user) {
+        user.setName("段江伟");
+        return "showUser.jsp";
+    }
+
+    @RequestMapping("/hand51")
+    public ModelAndView showUser(User user) {
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("showUser.jsp");
+        mav.addObject("user", user);
+        return mav;
+    }
+
+    @RequestMapping("/handle63")
+    public String handle63(Model model) {
+        Begger begger = new Begger();
+        begger.setName("段不伟");
+        model.addAttribute("begger", begger);
+        return "showUser.jsp";
+    }
+
+    @RequestMapping("/handle64")
+    public String handle64(ModelMap modelMap) {
+        User user = (User) modelMap.get("user");
+        user.setName("段萎不萎？");
+        return "showUser.jsp";
     }
 }

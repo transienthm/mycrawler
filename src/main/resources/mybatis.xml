@@ -13,12 +13,14 @@
     <typeAliases>
         <!--<package name="com.imooc.entity"></package>-->
         <typeAlias type="com.meituan.crawler.model.Article" alias="Article"/>
+        <typeAlias type="com.meituan.crawler.model.ColumnPiece" alias="ColumnPiece"/>
     </typeAliases>
 
 
     <mappers>
         <!--<mapper resource="com/imooc/mapper/UserMapper.xml" />-->
         <mapper resource="mapper/article-mapper.xml"/>
+        <mapper resource="mapper/columnpiece-mapper.xml"/>
     </mappers>
 
 
